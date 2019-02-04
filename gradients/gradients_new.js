@@ -148,10 +148,10 @@ drawCircle(0,0, 150, colArray[1][6],"", "" , true, false );
 drawCircle(0,0, 10, colArray[0][4],"", "" , true, false );
 
 linGrad = makeLinearGradient(-5,0,5,0,colArray[2][3], colArray[0][4]);
-for(var i=0; i<360 ; i+=15 ){
+for(var i=0; i<360; i+=15 ){
     var degree= 15;
     ctx.rotate(Math.PI / 180 * degree);
-    // the y = 25 pushes it away from the rotation point
+    // the y = 50 pushes it away from the rotation point
     drawRectangle(-50, 50, 100,100, linGrad, colArray[1][0], 1,true, true );
 }
 ctx.restore(); 
