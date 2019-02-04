@@ -102,7 +102,3 @@ function drawCircle(x,y,r, fillC, strokeC, lw, fill, stroke ){
     }
 
 }
-// drawCircle x,y,r, fillC, strokeC, lw, fill(boolean), stroke(boolean)
-//drawCircle(200,500, 50, colArray[0], colArray[4], 6, true, false);
-//drawCircle(400,500, 50, colArray[0], colArray[4], 6, true, true);
-//drawCircle(600,500, 50, colArray[0], colArray[4], 6, false, true);

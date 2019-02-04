@@ -1,18 +1,17 @@
 
 console.log("js file has been called");
 
-// basic drawing on the canvas with no functions
-var canvas = document.getElementById('myCanvas');
-var c = canvas.getContext('2d');
-var width = 800;
-var height =600;
-canvas.width = width;
-canvas.height = height;
+
+
 
  // Now this line will be the same size on the page
 
 canvas = document.querySelector('#myCanvas');
 var ctx = canvas.getContext('2d');
+var width = 800;
+var height =600;
+canvas.width = width;
+canvas.height = height;
 
 console.log(width);
 console.log(height)
