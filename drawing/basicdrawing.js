@@ -28,10 +28,10 @@ ctx.stroke();
 ctx.fill();
 
 // draw circle
-ctx.fillStyle='rgb(255,204,51)'
-ctx.strokeStyle='rgb(51,51,255)'
+ctx.fillStyle='rgb(255,204,51)';
+ctx.strokeStyle='rgb(51,51,255)';
 ctx.lineWidth=10;
-ctx.beginPath()
+ctx.beginPath();
 ctx.arc(200,60, 50, 0, 2*Math.PI);
 ctx.stroke();
 ctx.fill();
@@ -42,11 +42,11 @@ ctx.fillStyle="rgb(0,0,255)";
 var myFont= "bold 30px monospace";
 ctx.font=myFont;
 ctx.fillText("Hello World", 300,50);
-
+/*
 var BoxImg = new Image();   // Create new img element
 BoxImg.src = 'image_test.png'; // Set source path
 ctx.drawImage(BoxImg, 600,10,100,100);
-
+*/
 
 // draw line
 ctx.strokeStyle="rgb(255,0,0)";
