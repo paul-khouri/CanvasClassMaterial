@@ -17,6 +17,58 @@ var colArray=[
 
 // ---------------functions
 
+// funnction draw star x,y, RLarge, RSmall, col, number of points
+function drawStar(x,y,RLarge, RSmall, col, p){
+    
+    ctx.save(); 
+    ctx.translate(x,y);
+    ctx.beginPath();   
+    ctx.moveTo(RLarge, 0);
+    for(i=1; i<2*p ; i++){
+            ctx.rotate(Math.PI/p);
+            if(i%2 == 1){
+            ctx.lineTo(RSmall, 0);
+            
+            }else{
+                ctx.lineTo(RLarge, 0);
+
+            }
+    }
+    ctx.closePath();
+    ctx.fillStyle = col;
+    ctx.fill();
+    ctx.restore();
+    ctx.save();
+    ctx.translate(x,y);
+    ctx.beginPath();   
+    ctx.moveTo(RLarge, 0);
+    for(i=1; i<2*p ; i++){
+            ctx.rotate(Math.PI/p);
+            if(i%2 == 1){
+                console.log(i);
+                ctx.beginPath();
+                ctx.arc(RSmall+40, 0, 2, 0, 2*Math.PI);
+                ctx.closePath();
+                ctx.fillStyle=col;
+                ctx.fill();
+               
+            }else{
+                ctx.beginPath();
+                ctx.arc(RLarge, 0, 4, 0, 2*Math.PI);
+                ctx.closePath();
+                ctx.fillStyle=col;
+                ctx.fill();
+
+            }
+    }
+
+    ctx.restore();
+
+
+}
+
+
+
 // drawCircle x,y,r, fillC, strokeC, lw, fill(boolean), stroke(boolean)
 function drawCircle(x,y,r, fillC, strokeC, lw, fill, stroke ){
     ctx.beginPath();
