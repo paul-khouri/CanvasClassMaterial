@@ -1,6 +1,6 @@
 console.log("loops js is called");
 
-
+drawStar(500,300, 100,30, colArray[6], 10);
 // drawCircle x,y,r, fillC, strokeC, lw, fill(boolean), stroke(boolean)
 
 
@@ -23,17 +23,17 @@ function drawGridCentre(x,y,s,rot){
     drawCircle(0,0,20, colArray[0], colArray[0], 2, false, true);
     for(j = 0; j<7 ; j++){
         for(var i = 0 ; i<7 ; i++){
-            drawRectangle(0-s/2+i*s/7,0-s/2+j*s/7, s/7,s/7,colArray[3], colArray[4],1, false, true);
+            drawRectangle(0-s/2+i*s/7,0-s/2+j*s/7, s/7,s/7,colArray[3], colArray[4],0.5, false, true);
         }
     }
     ctx.restore();
 }
 
-drawGridCentre(300,300, 280, 30);
+//drawGridCentre(300,300, 280, 30);
 
 for(k =0 ; k<360; k+=20){
     console.log(k);
-    drawGridCentre(300,300, 280, k);
+    drawGridCentre(200,200, 280, k);
 
 
 }
