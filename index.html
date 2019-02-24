@@ -17,7 +17,7 @@
     </style>
 </head>
 <body>
-   <ul>
+<ul>
 <li><a href="drawing/basicdrawing.html"> Basic Drawing </a></li>
 <li><a href="functions/functions.html"> Functions </a>
 <br>
@@ -59,9 +59,32 @@ Every time it loops it erases the entire canvas and re-draws all the objects (th
 Because the a variable ( like x ) has changed, the object appears in a different position and we have 
 the illusion of movement because the changes happen very quickly.<br>
 The counters should give you an idea of how quickly the animation loop is running.
-
-
-
-   </ul>
-    </body>
+<hr>
+<li><a href="interaction/interaction_base.html"> Interaction Base </a></li>
+This canvas is blank but if you open the console and click the mouse on the canvas, 
+you will observe that "mousedown", "mouseup", and "mousemove" events are being registered.<br>
+Te basic animation loop is in the main js but serves no purpose at this stage.<br>
+The mouse events are being registered by the "listener" codes that have been put inside the object<br>
+The listener must be attached to an HTML element (in this case the canvas).<br>
+ Note that the canvas connection variable itself has been passed as a parameter.
+ <li><a href="interaction/interaction.html"> Interaction with dragged out rectangle </a></li>
+ This now integrates the animation frame with the listeners (and an object). <br>
+ Click and drag on the canvas.
+ <li><a href="interaction/interaction_square.html"> Interaction with dragged out rectangle and a contained square </a></li>
+This is virtually identical to the previous example. <br>
+The only difference is that a square is drawn inside the rectangle as well<br>
+It would be very helpful to try to solve this problem without looking at the code<br>
+Or have a look and then try on your own.<br>
+If you do try on your own and drag in different directions you 
+should find that there is a small but tricky problem that needs to be solved.
+<li><a href="interaction/interaction_push.html"> Draw a rectangle </a></li>
+Each click and drag leaves a rectangle drawn on the canvas<br>
+It should be noted at this stage, that we have the beginnings of a simple drawing program<br>
+Note that the Rectangle class is called from within the control object.<br>
+It is not great practice to do this without actually passing the class as a parameter<br>
+We could have done this but we do want to consider that we may be dealing with lots of classes <br>
+ and may need to manage things with more sophistaction later on. So this solution is fine for now<br>
+ In Javascript a class is accessible from anywhere.
+</ul>
+</body>
     </html>
